@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/all_back_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/gcz_bg" android:scaleType="fitXY" android:layout_centerHorizontal="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.5">
+            <ImageView android:id="@id/back" android:layout_width="@dimen/all_back" android:layout_height="@dimen/all_back" android:layout_marginLeft="@dimen/mine_marg" android:src="@drawable/all_back" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/Font_size" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/name_botton" android:text="关于观察者" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/all_view_back" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="@dimen/mine_marg" android:layout_marginRight="@dimen/mine_marg" android:layout_weight="2.7">
+            <ImageView android:layout_gravity="center" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_marginTop="30.0dip" android:src="@drawable/ic_launcher" />
+            <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="13.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="版本:" />
+                <TextView android:textSize="13.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2.0.125" />
+            </LinearLayout>
+            <TextView android:textSize="13.0sp" android:textColor="@color/colorPrimary" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="www.titiansoft.con" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <RelativeLayout android:gravity="center_vertical" android:id="@id/relayout_about_boot" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="新手指引" />
+                    <ImageView android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/login_register_normal_img" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <View android:background="@color/view_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <com.gczlclient.view.RippleLinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/relayout_feedback" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/mine_rl_height">
+                    <TextView android:textSize="@dimen/Font_size" android:textColor="@color/black" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="意见反馈" android:layout_weight="5.5" />
+                    <ImageView android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/login_register_normal_img" android:layout_weight="1.0" android:layout_alignParentRight="true" />
+                </com.gczlclient.view.RippleLinearLayout>
+                <View android:background="@color/view_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <com.gczlclient.view.RippleLinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/relayout_connect_us" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/mine_rl_height">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="联系我们" android:layout_weight="5.5" />
+                    <ImageView android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/login_register_normal_img" android:layout_weight="1.0" android:layout_alignParentRight="true" />
+                </com.gczlclient.view.RippleLinearLayout>
+                <View android:background="@color/view_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:background="@color/background" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.3" android:layout_alignParentBottom="true">
+            <TextView android:textColor="@color/defa_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="CopyRight 2017 ICP认证：苏ICP备16057858号" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

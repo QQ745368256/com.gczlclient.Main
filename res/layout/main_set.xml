@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ff252c40" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_set_user_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/set_user_message_style" />
+    <ImageView android:id="@id/iv_set_buy_soft" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="-5.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/set_buy_soft_style" />
+    <ImageView android:id="@id/iv_set_explan" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="-5.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/set_explan_style" />
+    <ImageView android:id="@id/iv_set_update_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="-5.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/set_update_message_style" />
+    <LinearLayout android:gravity="right" android:id="@id/layout_set_exit" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0sp" android:textColor="@color/wihte" android:id="@id/text_main_set_exit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="15.0dip" android:text="退出账户" />
+    </LinearLayout>
+</LinearLayout>

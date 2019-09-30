@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@drawable/bg_title_bar" android:layout_width="fill_parent" android:layout_height="45.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ImageView android:gravity="center" android:id="@id/title_bar_menu_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="3.0dip" android:src="@drawable/ic_top_bar_category" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ImageView android:background="@drawable/ic_top_divider" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toRightOf="@id/title_bar_menu_btn" />
+    <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textSize="20.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="功能菜单" />
+    </RelativeLayout>
+    <ImageView android:background="@drawable/ic_top_divider" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toRightOf="@id/title_bar_menu_btn" />
+    <RelativeLayout android:gravity="bottom|center|right" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textSize="13.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="生成服务端" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</LinearLayout>

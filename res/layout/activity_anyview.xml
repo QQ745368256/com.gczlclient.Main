@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.view.ViewPager android:id="@id/viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <ImageView android:layout_gravity="center_vertical" android:padding="13.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/indicator_white" />
+        <ImageView android:layout_gravity="center_vertical" android:padding="13.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/indicator_white" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@id/button" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_above="@id/ll" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/iv_ljty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ljty_style" />
+    </LinearLayout>
+</RelativeLayout>

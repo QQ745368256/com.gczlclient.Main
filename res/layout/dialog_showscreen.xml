@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/all_view_back" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="300.0dip" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/video_iv" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/press_screen_video" android:layout_weight="1.0" />
+            <ImageView android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.5" />
+            <ImageView android:id="@id/screenshot_iv" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/press_screen_screenshot" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <ImageView android:id="@id/rotate_iv" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/press_screen_rotate" android:layout_weight="1.0" />
+            <ImageView android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.5" />
+            <ImageView android:id="@id/exit_iv" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/press_screen_exit" android:layout_weight="1.0" />
+        </LinearLayout>
+        <View android:background="@color/view_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/all_back_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/gcz_bg" android:scaleType="fitXY" android:layout_centerHorizontal="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.5">
+            <ImageView android:id="@id/back" android:layout_width="@dimen/all_back" android:layout_height="@dimen/all_back" android:layout_marginLeft="@dimen/mine_marg" android:src="@drawable/all_back" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/Font_size" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/name_botton" android:text="购买软件" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="@dimen/mine_marg" android:layout_marginRight="@dimen/mine_marg" android:layout_weight="3.0">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/all_view_back" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <LinearLayout android:orientation="horizontal" android:id="@id/layout_buy_soft_count_price" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <TextView android:textSize="@dimen/Font_size" android:textColor="#ff000000" android:id="@id/text_buy_soft_count_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="梯田软件专业版" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="25.0dip" android:layout_marginRight="20.0dip">
+                            <TextView android:textSize="21.0sp" android:textStyle="bold" android:textColor="@color/new_blue" android:id="@id/text_buy_soft_count_price" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            <TextView android:textSize="@dimen/Font_size" android:textColor="@color/new_blue" android:id="@id/time_tver" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="元/年" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="@color/view_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/layout_buy_soft_count_count" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:textSize="@dimen/Font_size" android:textColor="#ff000000" android:id="@id/time_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="时间(/年)" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <ImageView android:id="@id/img_buy_soft_count_jian" android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/count_buy_soft_jian" />
+                        <LinearLayout android:orientation="vertical" android:layout_width="25.0dip" android:layout_height="25.0dip">
+                            <View android:background="@color/new_hui" android:layout_width="25.0dip" android:layout_height="0.5dip" />
+                            <TextView android:textColor="#ff000000" android:gravity="center" android:id="@id/text_buy_soft_count_realcount" android:layout_width="25.0dip" android:layout_height="24.0dip" android:text="1" />
+                            <View android:background="@color/new_hui" android:layout_width="25.0dip" android:layout_height="0.5dip" />
+                        </LinearLayout>
+                        <ImageView android:id="@id/img_buy_soft_count_jia" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginRight="20.0dip" android:src="@drawable/count_buy_soft_jia" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="@color/view_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/mine_rl_height">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:textSize="@dimen/Font_size" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="设备数量(/台)" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <ImageView android:id="@id/img_set_number_jian" android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/count_buy_soft_jian" />
+                        <LinearLayout android:orientation="vertical" android:layout_width="25.0dip" android:layout_height="25.0dip">
+                            <View android:background="@color/new_hui" android:layout_width="25.0dip" android:layout_height="0.5dip" />
+                            <TextView android:textColor="#ff000000" android:gravity="center" android:id="@id/set_number_realcount_tv" android:layout_width="25.0dip" android:layout_height="24.0dip" android:text="1" />
+                            <View android:background="@color/new_hui" android:layout_width="25.0dip" android:layout_height="0.5dip" />
+                        </LinearLayout>
+                        <ImageView android:id="@id/img_set_number_jia" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginRight="20.0dip" android:src="@drawable/count_buy_soft_jia" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/Font_size" android:textColor="#ffff6000" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="版本说明：" />
+            <ScrollView android:orientation="vertical" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="3.0dip" android:layout_weight="3.5" android:layout_alignParentBottom="true" android:layout_alignParentStart="true">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/rjgm_size" android:textColor="#ffff6000" android:id="@id/version_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="由于软件采用第三方传输，由于第三方的传输产生了自费，购买后不退不换（若软件与展示的效果视频不一致可以退款），软件不可用于监控他人手机，如若出现任何问题，本公司不承担任何法律责任！您购买本软件即同意本协议！" />
+                    <TextView android:textSize="@dimen/rjgm_size" android:textColor="#ffff6000" android:id="@id/title_botv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="注：购买后不退不换。本软件不可用于监控他人手机电脑等行为。如出现任何问题，本公司不承担任何法律责任！您购买本软件即统一本协议" />
+                </LinearLayout>
+            </ScrollView>
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/bt_shape" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="10.0dip" android:layout_weight="0.5">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_weight="1.0">
+                    <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/Font_size" android:textColor="#ff000000" android:id="@id/textView5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="合计 : " />
+                        <TextView android:textSize="21.0sp" android:textStyle="bold" android:textColor="#ffff4300" android:id="@id/text_buy_soft_count_money" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <TextView android:textSize="@dimen/Font_size" android:textColor="#ffff4300" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="元" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="right" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <TextView android:textSize="20.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/text_buy_soft_count_jiesuan" android:background="@drawable/bg_buy_soft_count_jiesuan_clickable" android:layout_width="130.0dip" android:layout_height="fill_parent" android:text="去结算" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

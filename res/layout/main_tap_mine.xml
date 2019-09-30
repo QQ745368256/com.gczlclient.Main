@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/all_back_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/gcz_bg" android:scaleType="fitXY" android:layout_centerHorizontal="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="@dimen/name_botton" android:layout_weight="0.5">
+            <TextView android:textSize="@dimen/Font_size" android:textColor="@color/white" android:id="@id/text_mine_tap_username" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="username" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/Font_size" android:textColor="@color/white" android:id="@id/text_mine_tap_level_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/text_mine_tap_username" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="@dimen/mine_marg" android:layout_marginRight="@dimen/mine_marg" android:layout_weight="3.0">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="vertical" android:background="@drawable/all_view_back" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.gczlclient.view.RippleLinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/relayout_mine_tap_buy_soft" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/mine_rl_height">
+                        <ImageView android:id="@id/software" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/buy" android:layout_weight="0.5" />
+                        <TextView android:textSize="@dimen/Font_size" android:textColor="@color/black" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/mine_ivmarg" android:text="购买软件" android:layout_weight="5.0" android:layout_toRightOf="@id/software" />
+                        <ImageView android:layout_gravity="center|right" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/login_register_normal_img" android:layout_weight="1.0" android:layout_alignParentRight="true" />
+                    </com.gczlclient.view.RippleLinearLayout>
+                    <View android:background="@color/view_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                    <com.gczlclient.view.RippleLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/relayout_mine_tap_novboot" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/mine_rl_height">
+                        <ImageView android:id="@id/novice" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/novice" android:layout_weight="0.5" />
+                        <TextView android:textSize="@dimen/Font_size" android:textColor="@color/black" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/mine_ivmarg" android:text="新手引导" android:layout_weight="5.0" android:layout_toRightOf="@id/novice" />
+                        <ImageView android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/login_register_normal_img" android:layout_weight="1.0" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    </com.gczlclient.view.RippleLinearLayout>
+                    <View android:background="@color/view_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                    <com.gczlclient.view.RippleLinearLayout android:gravity="center_vertical" android:id="@id/relayout_mine_tap_control" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/mine_rl_height">
+                        <ImageView android:id="@id/device" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/device" android:layout_weight="0.5" />
+                        <TextView android:textSize="@dimen/Font_size" android:textColor="@color/black" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/mine_ivmarg" android:text="受控设备" android:layout_weight="5.0" android:layout_toRightOf="@id/device" android:layout_centerVertical="true" />
+                        <ImageView android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/login_register_normal_img" android:layout_weight="1.0" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    </com.gczlclient.view.RippleLinearLayout>
+                </LinearLayout>
+                <com.gczlclient.view.RippleLinearLayout android:gravity="center_vertical" android:id="@id/relayout_mine_tap_yjsc" android:background="@drawable/all_view_back" android:layout_width="fill_parent" android:layout_height="@dimen/mine_rl_height" android:layout_marginTop="@dimen/mine_view_top">
+                    <ImageView android:id="@id/store" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/store" android:layout_weight="0.5" />
+                    <TextView android:textSize="@dimen/Font_size" android:textColor="@color/black" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/mine_ivmarg" android:text="硬件商城" android:layout_weight="5.0" android:layout_toRightOf="@id/store" android:layout_centerVertical="true" />
+                    <ImageView android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/login_register_normal_img" android:layout_weight="1.0" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </com.gczlclient.view.RippleLinearLayout>
+                <LinearLayout android:orientation="vertical" android:background="@drawable/all_view_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/mine_view_top">
+                    <com.gczlclient.view.RippleLinearLayout android:gravity="center_vertical" android:id="@id/relayout_mine_tap_help" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/mine_rl_height">
+                        <ImageView android:id="@id/help" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/help" android:layout_weight="0.5" />
+                        <TextView android:textSize="@dimen/Font_size" android:textColor="@color/black" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/mine_ivmarg" android:text="使用帮助" android:layout_weight="5.0" android:layout_toRightOf="@id/help" android:layout_centerVertical="true" />
+                        <ImageView android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/login_register_normal_img" android:layout_weight="1.0" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    </com.gczlclient.view.RippleLinearLayout>
+                    <View android:background="@color/view_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                    <com.gczlclient.view.RippleLinearLayout android:gravity="center_vertical" android:id="@id/relayout_mine_tap_fkproblem" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/mine_rl_height">
+                        <ImageView android:id="@id/issue" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/issue" android:layout_weight="0.5" />
+                        <TextView android:textSize="@dimen/Font_size" android:textColor="@color/black" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/mine_ivmarg" android:text="常见问题" android:layout_weight="5.0" android:layout_toRightOf="@id/issue" android:layout_centerVertical="true" />
+                        <ImageView android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/login_register_normal_img" android:layout_weight="1.0" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    </com.gczlclient.view.RippleLinearLayout>
+                    <View android:background="@color/view_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                    <com.gczlclient.view.RippleLinearLayout android:gravity="center_vertical" android:id="@id/relayout_mine_tap_about_soft" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/mine_rl_height">
+                        <ImageView android:id="@id/contact" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/contact" android:layout_weight="0.5" />
+                        <TextView android:textSize="@dimen/Font_size" android:textColor="@color/black" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/mine_ivmarg" android:text="联系我们" android:layout_weight="5.0" android:layout_toRightOf="@id/contact" android:layout_centerVertical="true" />
+                        <ImageView android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/login_register_normal_img" android:layout_weight="1.0" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    </com.gczlclient.view.RippleLinearLayout>
+                    <View android:background="@color/view_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                    <com.gczlclient.view.RippleLinearLayout android:gravity="center_vertical" android:id="@id/customer_rl" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/mine_rl_height">
+                        <ImageView android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/custtomer" android:layout_weight="0.5" />
+                        <TextView android:textSize="@dimen/Font_size" android:textColor="@color/black" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/mine_ivmarg" android:text="联系客服" android:layout_weight="5.0" android:layout_toRightOf="@id/contact" android:layout_centerVertical="true" />
+                        <ImageView android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/login_register_normal_img" android:layout_weight="1.0" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    </com.gczlclient.view.RippleLinearLayout>
+                </LinearLayout>
+                <com.gczlclient.view.RippleLinearLayout android:gravity="center" android:id="@id/relayout_mine_tap_exitsoft" android:background="@drawable/all_view_back" android:layout_width="fill_parent" android:layout_height="@dimen/mine_rl_height" android:layout_marginTop="@dimen/exit">
+                    <TextView android:textSize="@dimen/Font_size" android:textColor="@color/black" android:id="@id/text_mine_tap_exit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="退出账户" />
+                </com.gczlclient.view.RippleLinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

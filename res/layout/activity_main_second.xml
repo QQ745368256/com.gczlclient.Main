@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff5f5f9" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include android:visibility="gone" android:layout_width="fill_parent" layout="@layout/main_top" />
+            <android.support.v4.view.ViewPager android:id="@id/viewpager_main" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <include android:layout_width="fill_parent" layout="@layout/main_buttom" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/customerer_ll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_marginBottom="7.0dip" android:layout_above="@id/xg_tv" android:layout_alignParentRight="true">
+            <ImageView android:id="@id/customerer_iv" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginBottom="2.0dip" android:src="@drawable/customerer" android:elevation="4.0dip" />
+            <TextView android:textColor="@color/allcolor" android:gravity="center" android:id="@id/custom_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="联系客服" />
+            <ImageView android:id="@id/image_find_new_item" android:visibility="gone" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="2.0dip" android:src="@drawable/bg_add_new_item" android:layout_above="@id/xg_tv" android:elevation="4.0dip" />
+            <TextView android:textColor="@color/allcolor" android:gravity="center" android:id="@id/find_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="查找设备" />
+            <ImageView android:id="@id/image_add_new_item" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="2.0dip" android:src="@drawable/bg_add_new_item" android:layout_above="@id/xg_tv" android:elevation="4.0dip" />
+            <TextView android:textColor="@color/allcolor" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="添加设备" />
+        </LinearLayout>
+        <TextView android:textSize="13.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/xg_tv" android:background="@drawable/bg_add_item_help_clikable" android:layout_width="90.0dip" android:layout_height="28.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="60.0dip" android:text="效果视频" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:elevation="4.0dip" />
+    </RelativeLayout>
+</LinearLayout>

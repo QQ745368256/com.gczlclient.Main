@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ff252c40" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:background="#ff00b3e4" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textSize="19.0sp" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="电话簿" />
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ExpandableListView android:id="@id/elist" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="35.0dip" android:groupIndicator="@null" android:dividerHeight="0.5dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <com.gczlclient.Tool.AssortView android:id="@id/assort" android:layout_width="40.0dip" android:layout_height="fill_parent" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/all_back_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/gcz_bg" android:scaleType="fitXY" android:layout_centerHorizontal="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.5">
+            <ImageView android:id="@id/back" android:layout_width="@dimen/all_back" android:layout_height="@dimen/all_back" android:layout_marginLeft="@dimen/mine_marg" android:src="@drawable/all_back" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/Font_size" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/name_botton" android:text="意见反馈" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/all_view_back" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="@dimen/mine_marg" android:layout_marginRight="@dimen/mine_marg" android:layout_weight="3.0">
+            <LinearLayout android:background="@drawable/edittext1" android:layout_width="fill_parent" android:layout_height="200.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="15.0dip">
+                <EditText android:textSize="15.0sp" android:textColor="@color/black" android:textColorHint="#ff969696" android:gravity="top" android:background="@null" android:padding="5.0dip" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="感谢您的意见和建议，我们一直为您更好的使用体验而努力" android:inputType="textMultiLine" />
+            </LinearLayout>
+            <LinearLayout android:background="@drawable/edittext1" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="15.0dip">
+                <EditText android:textSize="15.0sp" android:textColor="@color/black" android:textColorHint="#ff969696" android:background="@null" android:padding="10.0dip" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="您的电话/QQ/邮箱" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:background="@drawable/press_button" android:layout_width="fill_parent" android:layout_height="@dimen/mine_rl_height" android:layout_marginLeft="15.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="15.0dip">
+                <TextView android:textSize="@dimen/Font_size" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="提 交" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

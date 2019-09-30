@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/all_back_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/gcz_bg" android:scaleType="fitXY" android:layout_centerHorizontal="true" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.5">
+            <ImageView android:id="@id/back" android:layout_width="@dimen/all_back" android:layout_height="@dimen/all_back" android:layout_marginLeft="@dimen/mine_marg" android:src="@drawable/all_back" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/Font_size" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/name_botton" android:text="投屏" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/all_view_back" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="@dimen/mine_marg" android:layout_marginRight="@dimen/mine_marg" android:layout_marginBottom="@dimen/mine_marg" android:layout_weight="3.0">
+            <Button android:id="@id/screen_bt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="开始投屏" />
+            <Button android:id="@id/play_bt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="显示投屏" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

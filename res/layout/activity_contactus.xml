@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/all_back_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:id="@id/layout_connect_usr_nodate" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/gcz_bg" android:scaleType="fitXY" android:layout_centerHorizontal="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.5">
+            <ImageView android:id="@id/back" android:layout_width="@dimen/all_back" android:layout_height="@dimen/all_back" android:layout_marginLeft="@dimen/mine_marg" android:src="@drawable/all_back" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/Font_size" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/name_botton" android:text="联系我们" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_connectus_normal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="@dimen/mine_marg" android:layout_marginRight="@dimen/mine_marg" android:layout_weight="3.0">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/all_view_back" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_set_guangwang" android:layout_width="fill_parent" android:layout_height="@dimen/mine_rl_height">
+                    <LinearLayout android:gravity="center|left" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="2.5">
+                        <TextView android:textSize="@dimen/Font_size" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="官方网站" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <TextView android:textSize="@dimen/Font_size" android:textColor="@color/allcolor" android:id="@id/text_set_guanwang" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="http://www.titiansoft.com" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="@color/view_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/mine_rl_height">
+                    <LinearLayout android:gravity="center|left" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="2.5">
+                        <TextView android:textSize="@dimen/Font_size" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="微信" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <TextView android:textSize="@dimen/Font_size" android:textColor="#ff000000" android:gravity="center" android:id="@id/text_connect_us_weixin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="stark3322" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="@color/view_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/mine_rl_height">
+                    <LinearLayout android:gravity="center|left" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="2.5">
+                        <TextView android:textSize="@dimen/Font_size" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="QQ" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <TextView android:textSize="@dimen/Font_size" android:textColor="#ff000000" android:id="@id/text_connect_us_qq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="\ 1595859390" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="@color/view_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/layout_set_phone" android:layout_width="fill_parent" android:layout_height="@dimen/mine_rl_height">
+                    <LinearLayout android:gravity="center|left" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="2.5">
+                        <TextView android:textSize="@dimen/Font_size" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="联系电话" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <TextView android:textSize="@dimen/Font_size" android:textColor="@color/allcolor" android:id="@id/text_set_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="\ 051265865173" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/Font_size" android:textColor="@color/colorAccent" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="购买软件请联系客服" android:textAlignment="center" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

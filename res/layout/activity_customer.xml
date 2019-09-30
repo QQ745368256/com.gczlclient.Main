@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <WebView android:id="@id/wv_1" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/index_progressBar" android:background="@drawable/loading_bg" android:paddingLeft="21.0dip" android:paddingTop="10.0dip" android:paddingRight="21.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="120.0dip" android:layout_height="100.0dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/progressBar1" android:layout_width="35.0dip" android:layout_height="35.0dip" android:indeterminateOnly="true" android:indeterminateDrawable="@drawable/dialog_loading" android:indeterminateBehavior="repeat" />
+        <TextView android:textSize="15.0sp" android:textColor="#fff0f0f0" android:id="@id/tipTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="加载中..." />
+    </LinearLayout>
+</RelativeLayout>

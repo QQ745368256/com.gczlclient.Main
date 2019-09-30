@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/dhb" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/dhb" android:scaleType="fitXY" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/thjl" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/thjl" android:scaleType="fitXY" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/dx" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/dx" android:scaleType="fitXY" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/gnxz" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/gnxz" android:scaleType="fitXY" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/ly" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ly" android:scaleType="fitXY" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/sx" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/sx" android:scaleType="fitXY" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/wj" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/wj" android:scaleType="fitXY" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/dw" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/dw" android:scaleType="fitXY" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/yycx" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/yycx" android:scaleType="fitXY" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/wjgl" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/zjzj" android:scaleType="fitXY" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

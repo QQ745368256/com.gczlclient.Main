@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/wihte" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:background="@color/background" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <TextView android:textSize="18.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我的" />
+    </LinearLayout>
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我的账号" />
+        <TextView android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="taotao" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <View android:background="@color/background" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+        <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="用户级别" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+            <TextView android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="付费用户" />
+            <TextView android:textSize="10.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2015/01/12-2019/01/12" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:background="@color/background" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="硬件商城" />
+        <ImageView android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/login_register_normal_img" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <View android:background="@color/background" android:layout_width="fill_parent" android:layout_height="8.0dip" />
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我的下载" />
+            <TextView android:textSize="10.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="/xxxxxx/xxxxx/xxxx/xxx/LClient/" />
+        </LinearLayout>
+        <ImageView android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/login_register_normal_img" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <View android:background="@color/background" android:layout_width="fill_parent" android:layout_height="8.0dip" />
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/relayout_buy_soft" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="购买软件" />
+        <ImageView android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/login_register_normal_img" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <View android:background="@color/background" android:layout_width="fill_parent" android:layout_height="8.0dip" />
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="使用帮助" />
+        <ImageView android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/login_register_normal_img" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <View android:background="@color/background" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="反馈问题解决" />
+        <ImageView android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/login_register_normal_img" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <View android:background="@color/background" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/relayout_about_soft" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="关于观察者" />
+        <ImageView android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/login_register_normal_img" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <View android:background="@color/background" android:layout_width="fill_parent" android:layout_height="8.0dip" />
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="退出账户" />
+    </RelativeLayout>
+</LinearLayout>

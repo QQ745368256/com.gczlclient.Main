@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/all_back_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/gcz_bg" android:scaleType="fitXY" android:layout_centerHorizontal="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.5">
+            <ImageView android:id="@id/back" android:layout_width="@dimen/all_back" android:layout_height="@dimen/all_back" android:layout_marginLeft="@dimen/mine_marg" android:src="@drawable/all_back" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/Font_size" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/name_botton" android:text="订单支付" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="@dimen/mine_marg" android:layout_marginRight="@dimen/mine_marg" android:layout_weight="3.0">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/all_view_back" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="@dimen/mine_rl_height" android:layout_marginLeft="5.0dip">
+                    <TextView android:textSize="@dimen/Font_size" android:textColor="@color/new_hui" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="订单名称 : " />
+                    <TextView android:textSize="@dimen/Font_size" android:textColor="@color/allcolor" android:id="@id/text_buy_soft_detail_ordername" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="梯田软件专业版" />
+                </LinearLayout>
+                <View android:background="@color/view_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="@dimen/mine_rl_height" android:layout_marginLeft="5.0dip">
+                    <TextView android:textSize="@dimen/Font_size" android:textColor="@color/new_hui" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="订单总价 : " />
+                    <TextView android:textSize="@dimen/Font_size" android:textColor="@color/allcolor" android:id="@id/text_buy_soft_detail_orderprice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="198" />
+                    <TextView android:textSize="@dimen/Font_size" android:textColor="@color/allcolor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="元" />
+                </LinearLayout>
+                <View android:background="@color/view_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <RelativeLayout android:orientation="horizontal" android:id="@id/relayout_buy_soft_detail_zfb" android:layout_width="wrap_content" android:layout_height="@dimen/mine_rl_height" android:layout_marginLeft="5.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/new_hui" android:id="@id/zhifu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="支付方式 : " android:layout_centerVertical="true" />
+                    <ImageView android:layout_width="70.0dip" android:layout_height="30.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/buy_soft_zfb" android:layout_toRightOf="@id/zhifu" android:layout_centerVertical="true" />
+                    <ImageView android:id="@id/img_buy_soft_detail_zfb_icon" android:tag="1" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="5.0dip" android:src="@drawable/mpay__ic_circle_check_on" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <RelativeLayout android:gravity="center_vertical" android:id="@id/relayout_buy_soft_detail_wx" android:layout_width="fill_parent" android:layout_height="@dimen/mine_rl_height" android:layout_marginLeft="5.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/new_hui" android:id="@id/wxzhifu" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="支付方式 : " android:layout_centerVertical="true" />
+                    <ImageView android:layout_width="70.0dip" android:layout_height="30.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/buy_sfot_wx" android:layout_toRightOf="@id/wxzhifu" android:layout_centerVertical="true" />
+                    <ImageView android:id="@id/img_buy_soft_detail_wx_icon" android:tag="0" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="5.0dip" android:src="@drawable/mpay__ic_circle_check_off" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/text_buy_soft_detail_buy" android:background="@drawable/bg_buy_soft_count_jiesuan_clickable" android:clickable="true" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="70.0dip" android:layout_marginRight="20.0dip" android:text="确认支付" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

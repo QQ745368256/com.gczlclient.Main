@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/all_back_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:id="@id/layout_pay_get" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/gcz_bg" android:scaleType="fitXY" android:layout_centerHorizontal="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.5">
+            <ImageView android:id="@id/back" android:layout_width="@dimen/all_back" android:layout_height="@dimen/all_back" android:layout_marginLeft="@dimen/mine_marg" android:src="@drawable/all_back" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/Font_size" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/name_botton" android:text="使用说明" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_connectus_normal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="@dimen/mine_marg" android:layout_marginRight="@dimen/mine_marg" android:layout_weight="3.0">
+            <RelativeLayout android:id="@id/relayout_pay_before" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <WebView android:layout_gravity="center_horizontal" android:id="@id/web_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layerType="hardware" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/layout_pay_after" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.5">
+                    <SurfaceView android:id="@id/surface_explain_pay_after" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="40.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="40.0dip" android:layout_marginBottom="10.0dip" />
+                    <ImageView android:id="@id/image_palayer_pay_after" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/explain_palyer" android:layout_centerInParent="true" />
+                    <ProgressBar android:id="@id/loadingvideo_after" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <TextView android:textSize="@dimen/Font_size" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:text="请选择手机型号：" />
+                <LinearLayout android:orientation="vertical" android:background="@drawable/all_view_back" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.5">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                        <com.gczlclient.view.RippleLinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/layout_explain_huawei" android:background="@color/white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                            <ImageView android:layout_width="wrap_content" android:layout_height="0.0dip" android:src="@drawable/huawei" android:layout_weight="2.0" />
+                            <TextView android:textSize="@dimen/Font_size" android:textColor="@color/defa_color" android:gravity="center" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="@dimen/shouji_marginTop" android:text="华为" android:layout_weight="1.0" />
+                        </com.gczlclient.view.RippleLinearLayout>
+                        <View android:background="@color/view_color" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                        <com.gczlclient.view.RippleLinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/layout_explain_leshi" android:background="@color/white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                            <ImageView android:layout_width="wrap_content" android:layout_height="0.0dip" android:src="@drawable/leshi" android:layout_weight="2.0" />
+                            <TextView android:textSize="@dimen/Font_size" android:textColor="@color/defa_color" android:gravity="center" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="@dimen/shouji_marginTop" android:text="乐视" android:layout_weight="1.0" />
+                        </com.gczlclient.view.RippleLinearLayout>
+                        <View android:background="@color/view_color" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                        <com.gczlclient.view.RippleLinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/layout_explain_meizu" android:background="@color/white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                            <ImageView android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip" android:src="@drawable/meizu" android:layout_weight="2.0" />
+                            <TextView android:textSize="@dimen/Font_size" android:textColor="@color/defa_color" android:gravity="center" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="@dimen/shouji_marginTop" android:text="魅族" android:layout_weight="1.0" />
+                        </com.gczlclient.view.RippleLinearLayout>
+                    </LinearLayout>
+                    <View android:background="@color/view_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                        <com.gczlclient.view.RippleLinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/layout_explain_oppo" android:background="@color/white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                            <ImageView android:layout_width="wrap_content" android:layout_height="0.0dip" android:src="@drawable/oppo" android:layout_weight="2.0" />
+                            <TextView android:textSize="@dimen/Font_size" android:textColor="@color/defa_color" android:gravity="center" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="@dimen/shouji_marginTop" android:text="OPPO" android:layout_weight="1.0" />
+                        </com.gczlclient.view.RippleLinearLayout>
+                        <View android:background="@color/view_color" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                        <com.gczlclient.view.RippleLinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/layout_explain_sanxing" android:background="@color/white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                            <ImageView android:layout_width="wrap_content" android:layout_height="0.0dip" android:src="@drawable/samsung" android:layout_weight="2.0" />
+                            <TextView android:textSize="@dimen/Font_size" android:textColor="@color/defa_color" android:gravity="center" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="@dimen/shouji_marginTop" android:text="三星" android:layout_weight="1.0" />
+                        </com.gczlclient.view.RippleLinearLayout>
+                        <View android:background="@color/view_color" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                        <com.gczlclient.view.RippleLinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/layout_explain_xiaomi" android:background="@color/white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                            <ImageView android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip" android:src="@drawable/xiaomi" android:layout_weight="2.0" />
+                            <TextView android:textSize="@dimen/Font_size" android:textColor="@color/defa_color" android:gravity="center" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="@dimen/shouji_marginTop" android:text="小米" android:layout_weight="1.0" />
+                        </com.gczlclient.view.RippleLinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.5" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

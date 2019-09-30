@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/all_back_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/gcz_bg" android:scaleType="fitXY" android:layout_centerHorizontal="true" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.5">
+            <ImageView android:id="@id/back" android:layout_width="@dimen/all_back" android:layout_height="@dimen/all_back" android:layout_marginLeft="@dimen/mine_marg" android:src="@drawable/all_back" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/Font_size" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/name_botton" android:text="应用程序" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="3.0">
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="@dimen/mine_marg" android:layout_marginTop="5.0dip" android:layout_marginRight="@dimen/mine_marg" android:layout_weight="2.5">
+                <ListView android:id="@id/listview" android:background="@drawable/all_view_back" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </LinearLayout>
+            <View android:id="@id/view_boo" android:background="@color/view_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.3" android:layout_alignParentBottom="true">
+                <LinearLayout android:id="@id/all_ll" android:background="@drawable/dialog_shape" android:clickable="true" android:layout_width="0.0dip" android:layout_height="50.0dip" android:layout_marginLeft="3.0dip" android:layout_weight="1.0">
+                    <Button android:textSize="@dimen/Font_size" android:textColor="@drawable/dialog_font" android:id="@id/dialogOk" android:background="@drawable/control_press_button" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="全部" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.2" />
+                <LinearLayout android:id="@id/run_ll" android:background="@drawable/dialog_shape" android:clickable="true" android:layout_width="0.0dip" android:layout_height="50.0dip" android:layout_marginRight="3.0dip" android:layout_weight="1.0">
+                    <Button android:textSize="@dimen/Font_size" android:textColor="@drawable/dialog_font" android:id="@id/dialogCancel" android:background="@drawable/control_press_button" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="运行" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:id="@id/iv_application_all" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="-2.0dip" android:layout_marginRight="7.5dip" android:src="@drawable/application_all_02" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:id="@id/iv_application_run" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.5dip" android:layout_marginTop="-2.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/application_run_01" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/index_progressBar" android:background="@drawable/loading_bg" android:paddingLeft="21.0dip" android:paddingTop="10.0dip" android:paddingRight="21.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="120.0dip" android:layout_height="100.0dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/progressBar1" android:layout_width="35.0dip" android:layout_height="35.0dip" android:indeterminateOnly="true" android:indeterminateDrawable="@drawable/dialog_loading" android:indeterminateBehavior="repeat" />
+        <TextView android:textSize="15.0sp" android:textColor="#fff0f0f0" android:id="@id/tipTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="加载中..." />
+    </LinearLayout>
+</RelativeLayout>

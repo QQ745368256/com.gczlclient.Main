@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/press_item" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/mine_rl_height">
+        <LinearLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/img_file_img" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/file_logo" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="3.0">
+            <TextView android:textColor="#ff000000" android:id="@id/tv_file_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="测试文件夹" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.5">
+            <TextView android:textColor="#ff000000" android:id="@id/tv_file_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2.3" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="center|right" android:id="@id/folder" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/login_register_normal_img" android:layout_weight="1.5" android:layout_alignParentRight="true" />
+    </LinearLayout>
+    <TextView android:textColor="#ff727171" android:id="@id/tv_file_type" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:id="@id/view" android:background="@color/view_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

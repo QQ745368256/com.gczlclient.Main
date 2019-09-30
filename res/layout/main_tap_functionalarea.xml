@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/all_back_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/gcz_bg" android:scaleType="fitXY" android:layout_centerHorizontal="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/Font_size" android:textColor="@color/white" android:gravity="center" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="@dimen/name_botton" android:text="功能区" android:layout_weight="0.5" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_weight="3.0">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_main_tap_gkpm" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:id="@id/iv_1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/gn_marg" android:src="@drawable/main_tap_index_gkpm" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_main_tap_kzpm" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:id="@id/iv_2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/gn_marg" android:src="@drawable/control_screen" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_main_tap_pmty" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:id="@id/iv_3" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/gn_marg" android:src="@drawable/main_tap_index_jtsz" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_main_tap_wj" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:id="@id/iv_4" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/gn_marg" android:src="@drawable/main_tap_index_wj" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_main_tap_dw" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:id="@id/iv_5" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/gn_marg" android:src="@drawable/main_tap_index_dw" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_main_tap_gnxz" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:id="@id/iv_6" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/gn_marg" android:src="@drawable/main_tap_index_gnxz" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_main_tap_yycx" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:id="@id/iv_7" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/gn_marg" android:src="@drawable/main_tap_index_yycx" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_main_tap_xj" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:id="@id/iv_8" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/gn_marg" android:src="@drawable/main_tap_index_xj" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_main_tap_xzgl" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ImageView android:id="@id/iv_9" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/gn_marg" android:src="@drawable/main_tap_index_xzgl" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:background="@drawable/main_tap_shuiyin" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.5">
+                <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="特价优惠" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/layout_main_tap_sj" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.5">
+                <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/allcolor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="补差价可以成为专业版。" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/lan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

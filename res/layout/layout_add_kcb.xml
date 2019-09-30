@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+        <TextView android:textSize="18.0sp" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="第九节" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip">
+        <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="周一至周五" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip">
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="5.0dip" android:layout_weight="1.0">
+                <EditText android:id="@id/ed_of_start" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="10.0dip" android:layout_height="fill_parent">
+                <View android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_weight="1.0">
+                <EditText android:id="@id/ed_of_end" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip">
+        <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="周六至周日" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip">
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="5.0dip" android:layout_weight="1.0">
+                <EditText android:id="@id/ed_ss_start" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="10.0dip" android:layout_height="fill_parent">
+                <View android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_weight="1.0">
+                <EditText android:id="@id/ed_ss_end" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip">
+        <LinearLayout android:gravity="center" android:id="@id/layout_kcb_add_commit" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="确定" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/layout_kcb_add_cancel" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="取消" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

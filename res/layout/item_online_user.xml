@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/press_item" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+        <TextView android:textColor="#ff000000" android:id="@id/tv_user_stat" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="5.0dip" />
+        <TextView android:textColor="#ff000000" android:id="@id/tv_user_key" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="100.0dip">
+            <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="2.2">
+                <ImageView android:id="@id/image_online_item_head" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/user_tx" android:scaleType="fitXY" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_weight="0.9">
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="19.0sp" android:textColor="#ff00b3ed" android:id="@id/tv_user_imei" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="\ 359631050371847" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:textSize="12.0sp" android:textColor="#ff000000" android:id="@id/tv_phone_name2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="手机名称 " />
+                        <TextView android:textSize="11.0sp" android:textColor="#ff000000" android:ellipsize="end" android:id="@id/tv_phone_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="sunsang........" android:singleLine="true" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:textSize="12.0sp" android:textColor="#ff000000" android:id="@id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="软件版本 " />
+                        <TextView android:textSize="11.0sp" android:textColor="#ff000000" android:id="@id/tv_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1.0.1" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:textSize="12.0sp" android:textColor="#ff000000" android:id="@id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="网络状态 " />
+                        <TextView android:textSize="11.0sp" android:textColor="#ff000000" android:id="@id/tv_wifi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="WIFI" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:textSize="12.0sp" android:textColor="#ff000000" android:id="@id/textView4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="安卓版本 " />
+                        <TextView android:textSize="11.0sp" android:textColor="#ff000000" android:id="@id/tv_android_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="4.2.3" />
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView android:textSize="12.0sp" android:textColor="#ff000000" android:id="@id/remark_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="备注:" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="2.2">
+                <ImageView android:id="@id/iv_online_user_eye" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/user_eye" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:id="@id/tv_stat" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+        <View android:id="@id/view_boo" android:background="@color/view_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    </LinearLayout>
+</LinearLayout>

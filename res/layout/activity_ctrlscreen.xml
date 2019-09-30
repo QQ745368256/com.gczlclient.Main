@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.gczlclient.Main.CtrlScreen.PlayerView android:id="@id/pull_play" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/menu_iv" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginRight="2.0dip" android:src="@drawable/screen_menu" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/timescreen_ll" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_centerHorizontal="true">
+        <com.assistne.icondottextview.IconDotTextView android:textSize="@dimen/Font_size" android:textColor="@color/jichuban" android:layout_gravity="center" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" app:direction="row" app:dot_alignTo="left" app:dot_color="@color/dingzhiban2" app:dot_size="6.0dip" app:dot_visible="true" app:spacing="8.0dip" />
+        <Chronometer android:textSize="17.0sp" android:textColor="@color/black" android:id="@id/timer_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:format="00:00:00" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/dialog_ll" android:background="@drawable/all_view_back" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/video_iv" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/press_screen_video" android:layout_weight="1.0" />
+            <ImageView android:id="@id/screenshot_iv" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/press_screen_screenshot" android:layout_weight="1.0" />
+            <ImageView android:id="@id/bright_iv" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/press_screen_bright" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+            <ImageView android:id="@id/add_iv" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/press_screen_add" android:layout_weight="1.0" />
+            <ImageView android:id="@id/minus_iv" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/press_screen_minus" android:layout_weight="1.0" />
+            <ImageView android:id="@id/audio_iv" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/press_screen_openaudio" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+            <ImageView android:id="@id/back_iv" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/press_screen_back" android:layout_weight="1.0" />
+            <ImageView android:id="@id/home_iv" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/press_screen_home" android:layout_weight="1.0" />
+            <ImageView android:id="@id/exit_iv" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/press_screen_exit" android:layout_weight="1.0" />
+        </LinearLayout>
+        <View android:background="@color/view_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+    </LinearLayout>
+    <com.gczlclient.view.SectorMenuButton android:id="@id/bottom_sector_menu" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:layout_alignParentRight="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" app:aebAnimDurationMillis="175" app:aebBlurBackground="true" app:aebBlurRadius="10.0" app:aebButtonElevation="0.0dip" app:aebButtonGapDp="60.0dip" app:aebEndAngleDegree="270" app:aebIsSelectionMode="false" app:aebMainButtonRotateAnimDurationMillis="300" app:aebMainButtonRotateDegree="0" app:aebMainButtonSizeDp="40.0dip" app:aebRippleEffect="true" app:aebStartAngleDegree="90" app:aebSubButtonSizeDp="40.0dip" />
+</RelativeLayout>

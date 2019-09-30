@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/all_back_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/gcz_bg" android:scaleType="fitXY" android:layout_centerHorizontal="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.5">
+            <ImageView android:id="@id/back" android:layout_width="@dimen/all_back" android:layout_height="@dimen/all_back" android:layout_marginLeft="@dimen/mine_marg" android:src="@drawable/all_back" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/Font_size" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/name_botton" android:text="功能限制" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="3.0">
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="@dimen/mine_marg" android:layout_marginRight="@dimen/mine_marg" android:layout_weight="3.0">
+                <ListView android:id="@id/listview_gnxz" android:background="@drawable/all_view_back" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="@dimen/mine_marg" android:layout_marginRight="@dimen/mine_marg" android:layout_weight="1.5">
+                <LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@id/layout_open_second" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip">
+                    <CheckBox android:layout_gravity="center" android:id="@id/iv_second" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" />
+                    <TextView android:textSize="@dimen/Font_size" android:textColor="@color/allcolor" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="按课表限制" />
+                </LinearLayout>
+                <LinearLayout android:background="@drawable/dialog_background" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="@dimen/astrict_botton" android:layout_weight="1.0">
+                    <Button android:textSize="@dimen/Font_size" android:textColor="@drawable/dialog_font" android:id="@id/iv_gnxz_kb" android:background="@drawable/control_press_button" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="课表" />
+                </LinearLayout>
+                <LinearLayout android:background="@drawable/dialog_background" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="@dimen/astrict_botton" android:layout_weight="1.0">
+                    <Button android:textSize="@dimen/Font_size" android:textColor="@drawable/dialog_font" android:id="@id/iv_gnxz_fs" android:background="@drawable/control_press_button" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="发送" />
+                </LinearLayout>
+                <LinearLayout android:background="@drawable/dialog_background" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="@dimen/astrict_botton" android:layout_weight="1.0">
+                    <Button android:textSize="@dimen/Font_size" android:textColor="@drawable/dialog_font" android:id="@id/iv_gnxz_jc" android:background="@drawable/control_press_button" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="解除" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/index_progressBar" android:background="@drawable/loading_bg" android:paddingLeft="21.0dip" android:paddingTop="10.0dip" android:paddingRight="21.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="120.0dip" android:layout_height="100.0dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/progressBar1" android:layout_width="35.0dip" android:layout_height="35.0dip" android:indeterminateOnly="true" android:indeterminateDrawable="@drawable/dialog_loading" android:indeterminateBehavior="repeat" />
+        <TextView android:textSize="15.0sp" android:textColor="#fff0f0f0" android:id="@id/tipTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="加载中..." />
+    </LinearLayout>
+</RelativeLayout>

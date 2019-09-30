@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/all_back_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/gcz_bg" android:scaleType="fitXY" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/Font_size" android:textColor="@color/defa_color" android:id="@id/device_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="暂无设备" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/Font_size" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_marginBottom="@dimen/name_botton" android:text="上线列表" android:layout_weight="0.5" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="3.0">
+            <android.support.v4.widget.SwipeRefreshLayout android:id="@id/swipe_ly" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/mine_marg" android:layout_marginRight="@dimen/mine_marg" android:layout_centerHorizontal="true"> > <ListView android:id="@id/listview_show_online_user" android:background="@drawable/all_view_back" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </android.support.v4.widget.SwipeRefreshLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_sxlb_has_noname" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="60.0dip">
+                    <TextView android:textSize="18.0sp" android:textColor="@color/colorAccent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="怎样添加设备" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="80.0dip">
+                    <ImageView android:layout_width="20.0dip" android:layout_height="60.0dip" android:src="@drawable/main_tap_below" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="60.0dip">
+                    <TextView android:textSize="14.0sp" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="点击下方的" />
+                    <ImageView android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" android:src="@drawable/bg_add_new_item" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="弹出二维码" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="80.0dip">
+                    <ImageView android:layout_width="20.0dip" android:layout_height="60.0dip" android:src="@drawable/main_tap_below" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="60.0dip">
+                    <TextView android:textSize="14.0sp" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="被控设备扫描二维码" />
+                </LinearLayout>
+                <LinearLayout android:gravity="bottom|center|right" android:id="@id/layout_noname_ljty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="10.0dip" android:layout_alignParentBottom="true">
+                    <TextView android:textSize="13.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/xg_tv" android:background="@drawable/bg_add_item_help_clikable" android:layout_width="90.0dip" android:layout_height="28.0dip" android:layout_marginRight="10.0dip" android:text="效果视频" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

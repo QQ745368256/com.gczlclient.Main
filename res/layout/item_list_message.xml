@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/tv_show_list_ljbs" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="连接标识" />
+    <TextView android:id="@id/tv_show_list_ljkey" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="连接key" />
+    <TextView android:id="@id/tv_show_list_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="备注姓名" />
+    <TextView android:id="@id/tv_show_list_imei" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="手机IMEI码" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="V " />
+        <TextView android:id="@id/tv_show_list_version" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="系统版" />
+    </LinearLayout>
+</LinearLayout>
